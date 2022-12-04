@@ -532,8 +532,8 @@ body {
   -webkit-backdrop-filter: blur(2.5px);
   backdrop-filter: blur(2.5px);
   border-radius: 50%;
-  right: -203px;
-  top: 5px;
+  right: -207px;
+  top: 6px;
   z-index: 3;
   display: flex;
   width: 40px;
@@ -582,7 +582,7 @@ body {
   position: relative;
   padding-top: 3.8rem;
   padding-left: 8.4375rem;
-  padding-bottom: 4.8rem;
+  padding-bottom: 5.6rem;
 }
 .input-group-wrapper {
   display: flex;
@@ -626,7 +626,7 @@ body {
   font-size: 12px;
   color: #282739;
   margin: 0px;
-  width: 20.8125rem;
+  max-width: 21.8125rem;
 }
 .check-text-link {
   color: #282739;
@@ -910,6 +910,7 @@ body {
   font-size: 14px;
   color: #282739;
   width: 4.375rem;
+  margin-bottom: 1.5625rem;
 }
 .modal {
   opacity: 0;
@@ -1063,10 +1064,11 @@ body {
   position: relative;
   font-size: 12px;
   cursor: pointer;
-  display: inline-flex;
-  align-items: center;
+  display: flex;
+  align-items: flex-start;
   height: 16px;
   color: rgb(0, 0, 0);
+  gap: 15px;
 }
 .check + label::before {
   content: " ";
@@ -1081,7 +1083,10 @@ body {
   border-color: rgb(204, 204, 204);
   border-radius: 2px;
   box-shadow: none;
-  margin-bottom: 8px;
+  flex-shrink: 0;
+}
+.check-text-modal {
+  width: 15rem;
 }
 .check-modal + label::before {
   content: " ";
@@ -1110,7 +1115,7 @@ body {
   align-items: center;
   margin-left: 0px;
   left: 0px;
-  top: -4px;
+  top: 0px;
   text-align: center;
   background-color: transparent;
   font-size: 10px;
@@ -1140,10 +1145,10 @@ body {
     border: 1.5px solid #6f73ee;
   }
   .batton-head:hover {
-    border: 1px solid #6f73ee;
+    background-color: #eaebed;
   }
   .batton-card-icon:hover {
-    border: 1px solid #6f73ee;
+    background-color: #eaebed;
   }
   .serch-icon:hover {
     border-bottom: 1px solid #6f73ee;
@@ -1369,6 +1374,10 @@ body {
   .training-photo {
     margin: 0;
   }
+  .title {
+    font-size: 24px;
+    line-height: 130%;
+  }
 }
 @media (max-width: 850px) {
   .header-content {
@@ -1453,6 +1462,21 @@ body {
   .input-group-wrapper {
     display: block;
   }
+  .section-info {
+    margin-bottom: -3.75rem;
+  }
+  .test-drive {
+    margin-bottom: -3.25rem;
+  }
+  .section-training {
+    margin-bottom: -6rem;
+  }
+  .section-card {
+    margin-bottom: -4rem;
+  }
+  .section-cta {
+    margin-bottom: 3rem;
+  }
 }
 @media (max-width: 550px) {
   .card-wrapper {
@@ -1517,10 +1541,22 @@ body {
     padding: 0.5rem 1.125rem 1.125rem 1.5rem;
   }
 }
+@media (max-width: 408px) {
+  .checkbox-wrapper .just-validate-error-label {
+    top: 51px;
+  }
+  .title {
+    font-size: 20px;
+    line-height: 130%;
+  }
+}
 @media (max-width: 370px) {
   .checkbox-wrapper .just-validate-error-label {
     right: 23px;
     top: 60px;
+  }
+  .checkbox-wrapper .just-validate-error-label {
+    top: 51px;
   }
 }
 @media (max-width: 350px) {
